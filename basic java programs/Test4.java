@@ -6,9 +6,13 @@ interface Kgm{
 interface Kgcas{
 	void bsc();
 }
-abstract class Kgisl{
-	abstract void arts();
-	abstract void engineering();
+class Kgisl{
+	 void arts(){
+	System.out.println("method arts");
+}
+	void engineering(){
+	System.out.println("engineering method");
+}
 
 }
 class Test4 extends Kgisl implements Kgm,Kgcas{
@@ -16,12 +20,7 @@ class Test4 extends Kgisl implements Kgm,Kgcas{
 	System.out.println("Kgm has started admission for development courses");
 	
 }
-	void arts(){
-	System.out.println("there are many seats avalible for arts in kgisl");
-}
-	void engineering(){
-	System.out.println("the admission for engeneering is going in kgisl");
-}
+	
 	public void bsc(){
 	System.out.println("the seats are filled for bsc");
 }	
